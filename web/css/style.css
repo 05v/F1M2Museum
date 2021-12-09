@@ -1,47 +1,98 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-body{
 
+body {
     color: white;
     background-color: rgb(34, 34, 34);
     width: 60vw;
     margin: 0 auto;
     padding: 40px;
-    
-
 }
 
-.VanGoghMuseum{
-    display:flex;
+html {
+    scroll-behavior: smooth;
+}
+
+.VanGoghMuseum {
+    display: flex;
     align-items: center;
     flex-direction: row;
-    gap:20px;
+    gap: 20px;
 }
 
-.VanGoghMuseum > article{
-
+.VanGoghMuseum>figure {
+    height: 100%;
 }
 
-.VanGoghMuseum > figure{
-
-    height:100%;
-}
-
-.VanGoghMuseum > figure > img {
+.VanGoghMuseum>figure>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.Artpieces > img {
-    
+
+.ArtPieces {
+    display: flex;
+    justify-content: space-evenly;
+    width: 65vw;
+    border-radius: 8px;
 }
 
-header{
+.OurHistory {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
 
+.OurHistory>figure {
+    height: 100%;
+}
+
+.OurHistory>figure>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Time_Reviews {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.Time_Reviews>button {
+    flex-direction: column;
+}
+
+.About_Van_Gogh {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.About_Van_Gogh>figure {
+    height: 100%;
+}
+
+.About_Van_Gogh>figure>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Contact {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+header {
     background-color: white;
     height: 120px;
-
 }
