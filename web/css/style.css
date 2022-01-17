@@ -11,6 +11,11 @@ body {
     margin: 0 auto;
     padding: 40px;
 }
+main{
+    max-width:60vw;
+    margin: 0 auto;
+    padding:40px;
+}
 
 html {
     scroll-behavior: smooth;
@@ -35,9 +40,17 @@ html {
 
 .ArtPieces {
     display: flex;
-    justify-content: space-evenly;
-    width: 65vw;
+    justify-content: space-between;
+    width: 50vw;
     border-radius: 8px;
+}
+
+.ArtPieces > div{
+    width: calc(100% / 3 - 60px / 3);
+}
+.ArtPieces > div > img{
+    width: 100%;
+    
 }
 
 .OurHistory {
