@@ -5,20 +5,52 @@
 }
 
 body {
-    color: white;
-    background-color: rgb(34, 34, 34);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     width: 60vw;
     margin: 0 auto;
     padding: 40px;
 }
-main{
-    max-width:60vw;
+
+main {
+    max-width: 60vw;
     margin: 0 auto;
-    padding:40px;
+    padding: 40px;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+.header {
+    background: black;
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.headerTitle {
+    color: white;
+    text-transform: uppercase;
+    font-size: 400%;
+    font-weight: 400;
+}
+
+.headerButton {
+    text-transform: uppercase;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 150%;
+    letter-spacing: 2px;
+}
+
+.headerButton:hover {
+    cursor: pointer;
 }
 
 .VanGoghMuseum {
@@ -45,12 +77,12 @@ html {
     border-radius: 8px;
 }
 
-.ArtPieces > div{
+.ArtPieces>div {
     width: calc(100% / 3 - 60px / 3);
 }
-.ArtPieces > div > img{
+
+.ArtPieces>div>img {
     width: 100%;
-    
 }
 
 .OurHistory {
