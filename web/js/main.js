@@ -1,24 +1,64 @@
-const button = document.getElementById("js--menu");
-const navigation = document.getElementById("js--nav");
-const body = document.getElementById("js--body");
+const MyTitle = document.getElementById('MyTitle');
+const MyImage = document.getElementById('MyImage');
+const MyInput = document.getElementById('MyInput');
 
-button.onclick = function() {
-    navigation.style.visibility = "visible";
-    navigation.style.opacity = 1;
-    body.style.overflow = "hidden";
+let locations = [{
+        "Title": "Spot 0",
+        "Image": "img/0.jpg",
+    },
+    {
+        "Title": "Spot 1",
+        "Image": "img/1.jpg"
+    },
+    {
+        "Title": "Spot 2",
+        "Image": "img/2.jpg"
+    },
+    {
+        "Title": "Spot 3",
+        "Image": "img/3.jpg"
+    },
+    {
+        "Title": "Spot 4",
+        "Image": "img/4.jpg"
+    },
+    {
+        "Title": "Spot 5",
+        "Image": "img/5.jpg"
+    },
+    {
+        "Title": "Spot 6",
+        "Image": "img/6.jpg"
+    },
+    {
+        "Title": "Spot 7",
+        "Image": "img/7.jpg"
+    },
+    {
+        "Title": "Spot 8",
+        "Image": "img/8.jpg"
+    },
+    {
+        "Title": "Spot 9",
+        "Image": "img/9.jpg"
+    },
+    {
+        "Title": "Spot 10",
+        "Image": "img/10.jpg"
+    },
+    {
+        "Title": "Spot 11",
+        "Image": "img/11.jpg"
+    }
+]
+
+function show(index) {
+    MyTitle.innerHTML = locations[index].Title;
+    MyImage.src = locations[index].Image;
 }
 
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
+function GetInput() {
+    show(MyInput.value);
+    MyInput.value = "";
+    MyInput.focus();
 }

@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(37, 37, 37);
+    color: white
+}
+
+#container {
+    background-color: rgb(58, 58, 58);
+    width: 900px;
+    height: 600px;
+    margin: 50px auto auto auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: inset 2px gray;
+}
+
+#MyInteraction {
+    padding: 10px;
+}
+
+.map1 {
+    margin-top: 20px;
+    margin-left: 3px;
+    width: 70%;
+    height: auto;
+}
+
+.map2 {
+    margin-top: 10px;
+    margin-left: 3px;
+    width: 70%;
+    height: auto;
+}

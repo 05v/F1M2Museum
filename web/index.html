@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 
+
 </head>
 
 <body>
@@ -112,6 +113,8 @@
             <img src="https://via.placeholder.com/500x500.png?text=Our+History" alt="placeholder">
 
             <h2>Our History</h2>
+            <br>
+            
 
             <p>
 
@@ -143,12 +146,21 @@
         <!-- Interacive Route -->
         <article class="Interacive">
 
-            <h2>Coming soon</h2>
-            <p>Interactive Route</p>
+            <div id="container">
+                <img id="MyImage" src="img/0.jpg" height="600px" alt="Foto genomen van buiten het gebouw.">
 
-            <img id="img" src="https://via.placeholder.com/800x600png?text=1" alt="placeholder">
-            <div class="prev" onclick="onClickPrev()">&lt;</div>
-            <div class="next" onclick="onClickNext()">&gt;</div>
+                <div id="MyInteraction">
+                    <div id="MyTitle">
+                        Spot: ( Tussen 0 en 12 )
+                    </div>
+                    <input type="text" id="MyInput" autocomplete="off">
+                    <input type="button" value="put in" onclick="GetInput()">
+
+                    <img class="map1" src="img/map1.png">
+                    <img class="map2" src="img/map2.png">
+                    <script src="js/main.js"></script>
+                </div>
+                
 
         </article>
 
