@@ -37,18 +37,6 @@ let locations = [{
     {
         "Title": "Spot 8",
         "Image": "img/8.jpg"
-    },
-    {
-        "Title": "Spot 9",
-        "Image": "img/9.jpg"
-    },
-    {
-        "Title": "Spot 10",
-        "Image": "img/10.jpg"
-    },
-    {
-        "Title": "Spot 11",
-        "Image": "img/11.jpg"
     }
 ]
 
