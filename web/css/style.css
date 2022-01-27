@@ -6,36 +6,39 @@
 
 body {
     color: rgb(0, 0, 0);
-    background-color:#95D0A9;
+    background-color: #95D0A9;
     margin: 0 auto;
-    
 }
 
 main {
     max-width: 60vw;
     margin: 0 auto;
-   
 }
 
 #container {
     width: 500px;
     height: 500px;
-    display: grid;
-    grid-template-columns: auto auto;
     margin-left: auto;
-    margin-right: 600px;
+    margin-right: auto;
 }
-#container > img{
+
+#container>img {
     max-width: 700px;
     max-height: 500px;
     padding: 40px;
-    
+    align-items: flex-start;
+    align-items: center;
 }
+
+#container>div {
+    width: 50px;
+    max-height: 1px;
+}
+
 
 #MyInteraction {
     padding: 10px;
 }
-
 
 .map2 {
     margin-top: 10px;
@@ -49,7 +52,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.header{
+.header {
     background: black;
     display: flex;
     height: 100px;
@@ -88,13 +91,11 @@ html {
     align-items: center;
     flex-direction: row;
     gap: 20px;
+    margin-top: 20px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
     padding: 10px;
 }
-
-
-
 
 .VanGoghMuseum>img {
     width: 100%;
@@ -109,7 +110,7 @@ html {
     margin-right: auto;
     width: 50vw;
     border-radius: 8px;
-    padding: 20px   ;
+    padding: 20px;
 }
 
 .ArtPieces>div {
@@ -119,7 +120,7 @@ html {
 .ArtPieces>div>img {
     width: 100%;
     float: left;
-    width:  300px;
+    width: 300px;
     height: 300px;
     object-fit: cover;
     justify-content: space-between;
@@ -139,7 +140,8 @@ html {
 
 .OurHistory>img {
     max-width: 1100px;
-    max-height:600px; ;
+    max-height: 600px;
+    ;
     padding: 40px;
 }
 
@@ -150,7 +152,8 @@ html {
     flex-direction: row;
     gap: 20px;
 }
-.Time_Reviews > ul > li{
+
+.Time_Reviews>ul>li {
     padding: 5px;
 }
 
@@ -166,15 +169,14 @@ html {
 }
 
 .About_Van_Gogh>p {
-    flex-direction:row;
-    padding:40px;
+    flex-direction: row;
+    padding: 40px;
 }
 
 .About_Van_Gogh>img {
     max-width: 500px;
     max-height: 500px;
     margin-left: -385px;
-    
 }
 
 .Contact {
@@ -187,6 +189,20 @@ html {
 header {
     background-color: white;
     height: 120px;
+}
+
+.MyImage {
+    width: auto;
+    height: 50vh;
+}
+
+.TrustPilot {
+    flex-direction: column;
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box
 }
 
 
@@ -291,6 +307,12 @@ header {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
+}
+
+footer {
+    margin-top: 10px;
+    height: 40px;
+    background-color: black;
 }
 
 @-webkit-keyframes fade {

@@ -36,7 +36,7 @@
         <button class="headerButton">Menu</button>
     </header>
     <main>
-        
+
 
         <!-- Van Gogh Museum Part -->
         <article class="VanGoghMuseum">
@@ -54,7 +54,7 @@
         </article>
 
 
-        <hr noshade class="hr_break">
+
 
 
         <!-- Art Portfolio Part -->
@@ -105,19 +105,19 @@
         </article>
 
 
-        <hr noshade class="hr_break">
+
 
 
         <!-- Our History Part -->
         <article class="OurHistory">
 
-            <img src="img/vapc/0.jpg" alt="placeholder">
+            <img src="img/vapc/0.jpg" alt="History of our museum">
 
             <h2>Our History</h2>
-            
+
             <p>
 
-                Design for a Van Gogh Museum was commissioned by the Dutch government in 1963 to Dutch architect and furniture designer Gerrit Rietveld. Rietveld died a year later, and the building was not completed until 1973, when the museum opened its doors. 
+                Design for a Van Gogh Museum was commissioned by the Dutch government in 1963 to Dutch architect and furniture designer Gerrit Rietveld. Rietveld died a year later, and the building was not completed until 1973, when the museum opened its doors.
 
             </p>
             <br>
@@ -129,41 +129,34 @@
             <br>
             <p>
 
-                Vincent van Gogh was a Dutch painter, generally considered to be the greatest after Rembrandt van Rijn, and one of the greatest of the Post-Impressionists.
-                He sold only one artwork during his life, but in the century after his death he became perhaps the most recognized painter of all time.
+                Vincent van Gogh was a Dutch painter, generally considered to be the greatest after Rembrandt van Rijn, and one of the greatest of the Post-Impressionists. He sold only one artwork during his life, but in the century after his death he became perhaps
+                the most recognized painter of all time.
             </p>
 
         </article>
 
 
-        <hr noshade class="hr_break">
-
-
-        <hr noshade class="hr_break">
 
 
         <!-- Interacive Route -->
-        <article class="Interacive">
+        <article class="Interactive">
+            <p>Interactive Route</p>
+
+            <div id="MyInteraction"></div>
+            <img id="MyImage" class="MyImage" src="img/0.jpg" height="600" alt="Photo taken from outside the building.">
 
             <div id="container">
-                <img id="MyImage" src="img/0.jpg" height="600px" alt="Foto genomen van buiten het gebouw.">
-
-                <div id="MyInteraction">
-                    <div id="MyTitle">
-                        Spot: ( Tussen 0 en 8 )
-                    </div>
-                    <input type="text" id="MyInput" autocomplete="off">
-                    <input type="button" value="put in" onclick="GetInput()">
-                    <img class="map1" src="img/map1.png">
-                    <script src="js/main.js"></script>
+                <div id="MyTitle">
+                    Spot: ( Tussen 0 en 8 )
                 </div>
-                
+                <input type="text" id="MyInput" autocomplete="off">
+                <input type="button" value="put in" onclick="GetInput()">
+
+                <img class="map1" src="img/map1.png" alt="A map of the first floor of the Van Gogh Museum.">
+            </div>
+
 
         </article>
-
-
-        <hr noshade class="hr_break">
-
 
         <!-- Openingstijden & Reviews -->
         <article class="Time_Reviews">
@@ -192,15 +185,15 @@
                 <li>SUNDAY: 10:00 AM - 06:00PM</li>
             </ul>
 
-            <button>Placeholder Review</button>
-
             <h3>Our Location:</h3>
             <p>Museumplein 6 1071 DJ Amsterdam</p>
+
+            <img class="TrustPilot" src="img/vapc/trustpilot.png" alt="Trust Pilot 5 star Review.">
 
         </article>
 
 
-        <hr noshade class="hr_break">
+
 
 
         <!-- About Van Gogh -->
@@ -211,33 +204,61 @@
 
             <img src="img/vapc/g4.jpg" alt="about van gogh">
             <p>
-                Vincent van Gogh was a Dutch painter, generally considered to be the greatest after Rembrandt van Rijn, and one of the greatest of the Post-Impressionists.<br>
-                He sold only one artwork during his life, but in the century after his death he became perhaps the most recognized painter of all time.
+                Vincent van Gogh was a Dutch painter, generally considered to be the greatest after Rembrandt van Rijn, and one of the greatest of the Post-Impressionists.<br> He sold only one artwork during his life, but in the century after his death
+                he became perhaps the most recognized painter of all time.
             </p>
-            
+
         </article>
 
 
-        <hr noshade class="hr_break">
+
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="img/slideshow/vangogh1.png" alt="Slideshow" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/slideshow/vangogh2.png" alt="Slideshow" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/slideshow/vangogh3.png" alt="Slideshow" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/slideshow/vangogh4.png" alt="Slideshow" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/slideshow/vangogh5.png" alt="Slideshow" style="width:100%">
+            </div>
+        </div>
+
 
 
         <!-- Contact -->
         <article class="Contact">
 
-            <h1 id="Contact">Contact</h2>
+            <h2 id="Contact">Contact</h2>
 
-                <!-- Adress -->
-                <p>Adress</p>
-                <p class="Adress"> Museumplein 6 1071 DJ Amsterdam </p>
+            <!-- Adress -->
+            <p>Adress</p>
+            <p class="Adress"> Museumplein 6 1071 DJ Amsterdam </p>
 
-                <!-- Email & Phone -->
-                <p>Email & Phone</p>
-                <p class="Email_Phone">info@vangoghmuseum.nl (020) 570 52 00</p>
+            <!-- Email & Phone -->
+            <p>Email & Phone</p>
+            <p class="Email_Phone">info@vangoghmuseum.nl (020) 570 52 00</p>
 
         </article>
+        <script src="js/main.js"></script>
     </main>
-    <script>
-    </script>
+
+
+    <footer></footer>
 
 </body>
 
